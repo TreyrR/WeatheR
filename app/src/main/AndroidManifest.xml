@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.weather">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logotype"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logotype"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WeatheR">
+        <activity
+            android:name=".LogoActivity"
+            android:exported="true"
+            android:label="@string/title_activity_logo"
+            android:theme="@style/Theme.WeatheR.NoActionBar" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
